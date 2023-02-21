@@ -1,9 +1,18 @@
+/** 
+ * Exercice 3 dans le cadre du devoir 1
+ */
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
+
+/**
+ * Class principal
+ * @author theGholem
+ * @author ayman-lahdili
+ */
 public class Permutation{
 
-  private String  a, b, c;
+  private String  a, b, c; //les trois lignes à permuter
 
   public Permutation(String a, 	String b, String c){
     this.a=a;
