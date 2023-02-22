@@ -25,16 +25,15 @@ public class Divisibility{
   }
 
   /**
-   *  Imprime si le nombre a est divisble par le nombre b ou vice-versa
+   * Vérifie si un le nombre a sont divisbles par b
+   * @return boolean
    */
-  public void isDisvisible() {
+  public boolean isDisvisible() {
     if ( this.a%this.b == 0 ){
-      System.out.println(this.a+" est divisible par "+this.b+" .");
-    } else if ( this.a%this.b!=0 && this.b%this.a == 0 ) {
-      System.out.println(this.a+" n'est pas divisible par "+this.b+" . \nPar contre "+this.b+" est divisible par "+this.a);
-    } else {
-      System.out.println("Aucun des deux n'est divisible par l'autre");
-    }
+      return true;
+    } 
+    return false;
+    
   }
 
 
@@ -43,20 +42,29 @@ public class Divisibility{
     System.out.println("-----> EXO1 \n");
     Scanner input = new Scanner(System.in);
 
+    boolean validInput=true;
     
-    try {
+    do {
+      try {
+        System.out.println("Veuillez saisir le entier nombre svp");
+        int n1 = input.nextInt();
+        System.out.println("Veuillez saisir le second entier svp");
+        int n2 = input.nextInt();
 
-      System.out.println("Veuillez saisir le entier nombre svp");
-      int n1 = input.nextInt();
-      System.out.println("Veuillez saisir le second entier svp");
-      int n2 = input.nextInt();
+        if ( new Divisibility(n1,n2).isDisvisible() ){
+          System.out.println(n1+" est divisible par "+n2+".");
+        } else if ( new Divisibility(n2,n1).isDisvisible() ) {
+          System.out.println(n1+" n'est pas divisible par "+n2+". \nPar contre, "+n2+" est divisible par "+n1+".");
+        } else {
+          System.out.println("Aucun des deux nombres n'est divisible");
+        }
 
-      Divisibility isD = new Divisibility(n1,n2);
-      isD.isDisvisible();
-
-    } catch (InputMismatchException e) {
-      System.out.println("Error : "+e.getMessage()+"/nLe type int est attendu");
-    }
+      } catch (InputMismatchException e) {
+        input.next();
+        validInput = false;
+        System.out.println("Veuiller saisir un nombre entier");
+      }
+    } while (validInput == false);
 
     input.close();
 
