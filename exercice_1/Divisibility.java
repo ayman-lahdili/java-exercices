@@ -42,10 +42,11 @@ public class Divisibility{
     System.out.println("-----> EXO1 \n");
     Scanner input = new Scanner(System.in);
 
-    boolean validInput=true;
+    boolean validInput;
     
     do {
       try {
+        validInput=true;
         System.out.println("Veuillez saisir le entier nombre svp");
         int n1 = input.nextInt();
         System.out.println("Veuillez saisir le second entier svp");
