@@ -1,5 +1,6 @@
 /** 
  * Exercice 3 dans le cadre du devoir 1
+ * Pour les tests effectués, voir le fichier test.txt
  */
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
