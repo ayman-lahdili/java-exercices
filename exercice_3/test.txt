@@ -1,0 +1,77 @@
+Voici les différents tests que nous avons effectuée pour l'exercice 3
+_____________________________________________________________________
+
+#######################
+# Test 1: cas exemple #
+#######################
+
+-----> EXO3
+
+Veuiller saisir vos trois lettres:
+1: a
+2: b
+3: c
+
+La permutation est : 
+abc
+bca
+cab
+acb
+bac
+cba
+
+
+######################
+# Test 2: cas normal #
+######################
+
+Veuiller saisir vos trois lettres: 
+1: c
+2: b
+3: a
+
+La permutation est :
+cba
+bac
+acb
+cab
+bca
+abc
+
+
+####################################################
+# Test 3: avec des mots de plus de deux caractères #
+####################################################
+
+-----> EXO3 
+
+Veuiller saisir vos trois lettres: 
+1: aa
+2: bb
+3: cc
+
+La permutation est :
+abc
+bca
+cab
+acb
+bac
+cba
+
+
+###############################
+# Test 4: avec caractère vide #
+###############################
+
+Veuiller saisir vos trois lettres: 
+1:  x
+2: b
+3: c
+
+La permutation est : 
+ bc
+bc 
+c b
+ cb
+b c
+cb 

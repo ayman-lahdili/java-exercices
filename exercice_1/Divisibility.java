@@ -1,5 +1,6 @@
 /** 
  * Exercice 1 dans le cadre du devoir 1
+ *  Pour les tests effectués, voir le fichier test.txt
  */
 import java.util.Scanner;
 import java.util.InputMismatchException;

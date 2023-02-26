@@ -1,0 +1,111 @@
+Voici les différents tests que nous avons effectuée pour l'exercice 1
+_____________________________________________________________________
+
+#######################
+# Test 1: cas normal #
+#######################
+
+-----> EXO1 
+
+Premier nombre entier: 
+25
+Second nombre entier: 
+5
+25 est divisible par 5.
+
+
+##########################################################
+# Test 2: cas normal mais on inverse l'ordre des nombres #
+##########################################################
+
+-----> EXO1 
+
+Premier nombre entier: 
+5
+Second nombre entier: 
+25
+5 n'est pas divisible par 25. 
+Par contre, 25 est divisible par 5.
+
+
+##########################################################
+# Test 2: cas normal mais on inverse l'ordre des nombres #
+##########################################################
+
+-----> EXO1 
+
+Premier nombre entier: 
+9
+Second nombre entier: 
+5
+Aucun des deux nombres n'est divisible
+
+
+##########################
+# Test 4: erreur de type #
+##########################
+
+-----> EXO1 
+
+Premier nombre entier: 
+2.5
+Veuiller saisir un nombre entier
+
+Premier nombre entier:
+3.2
+Veuiller saisir un nombre entier
+
+Premier nombre entier:
+5
+Second nombre entier: 
+25
+5 n'est pas divisible par 25. 
+Par contre, 25 est divisible par 5.
+
+
+####################################
+# Test 5: erreur de division par 0 #
+####################################
+
+-----> EXO1 
+
+Premier nombre entier: 
+80
+Second nombre entier: 
+0
+Veuiller saisir un nombre différent de 0!
+
+Premier nombre entier:
+80
+Second nombre entier: 
+40
+80 est divisible par 40.
+
+
+##########################################################
+# Test 6: les deux dernières erreurs dans la même boucle #
+##########################################################
+
+-----> EXO1 
+
+Premier nombre entier: 
+25.5
+Veuiller saisir un nombre entier
+
+Premier nombre entier:
+80
+Second nombre entier: 
+0
+Veuiller saisir un nombre différent de 0!
+
+Premier nombre entier:
+80
+Second nombre entier: 
+2.5
+Veuiller saisir un nombre entier
+
+Premier nombre entier:
+80
+Second nombre entier: 
+50
+Aucun des deux nombres n'est divisible
